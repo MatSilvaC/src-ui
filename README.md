@@ -2,5 +2,3 @@
 
 ## Informações
 
-**Tecnologia**: [PHP](http://php.net) / [Laravel](https://laravel.com)
-
