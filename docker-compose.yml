@@ -1,0 +1,14 @@
+version: '2'
+services:
+  web:
+    image: nexus.devops.ifrn.edu.br/{{ repository }}:latest
+    volumes:
+      - web_tmp:/tmp
+    ports:
+      - "{{ port }}:3000"
+    restart: always
+    environment:
+      LANG: "C.UTF-8"
+      TZ: "America/Recife"
+volumes:
+  web_tmp:
