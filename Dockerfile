@@ -8,4 +8,4 @@ WORKDIR /app
 
 ADD . /app
 
-CMD node app.js
+CMD npm run start

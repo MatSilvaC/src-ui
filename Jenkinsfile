@@ -8,7 +8,7 @@ node {
 
   docker.image('node:10-alpine').inside() {
     stage ('Build, Check and Test') {
-      sh "ls -la"
+      sh "npm install"
     }
   }
 
