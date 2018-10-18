@@ -2,17 +2,29 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import {Cartao,Carousel,Noticia, NoticiaCarousel} from "./components";
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Q-Box</h1>
-        </header>
-        <p className="App-intro">
-          ;-) funcionou
-        </p>
+      <div>
+        {/* <Cartao title="asdd" subtitle="teste" />
+        <Cartao done="false" title="Done" subtitle="teste" />*/}
+        {/* <Carousel/>
+        <Carousel>
+          
+        </Carousel> */}
+        <Carousel>
+        <div><Cartao done subtitle="teste" title="teste" color="#d9534f"/></div>
+        <div><Cartao done title="teste"/></div>
+        <div><Cartao done/></div>
+        </Carousel>
+        <Cartao done subtitle="teste" title="teste" color="#d9534f"/>
+        <Noticia title="Teste" subtitle="Blablablablabla..."/>
+        <NoticiaCarousel title="Teste" subtitle="Blablablablabla..."/>
+        <Carousel>
+        <div><Noticia title="Teste" subtitle="Blablablablabla..."/></div>
+        <div><NoticiaCarousel title="Teste" subtitle="Blablablablabla..."/></div>
+        </Carousel>
       </div>
     );
   }

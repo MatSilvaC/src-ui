@@ -4,22 +4,69 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 40vmin;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+.App-link {
+  color: #61dafb;
 }
 
-.App-intro {
-  font-size: large;
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #EFEFEF;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #262626;
+}
+
+.ant-carousel .slick-dots li button {
+  border-radius: none;
+}
+
+.ant-carousel .slick-dots li {
+  background: #262626;
+  border-radius: 2px;
+}
+
+.carousel-title {
+  text-align: left;
+  margin: 0px;
+  margin-top: 50px;
+  line-height: 150px;
+  font-size: 48px;
+  
+}
+
+.carousel-img {
+  width: 400px;
+  line-height: 600px;
+}
+
+.carousel-text {
+  text-align: right;
+  font-size: 20px;
+  width: 100%;
+  text-overflow: clip;
+  overflow: visible;
+}
+
+.carousel-btn {
+  float: right;
 }
 
 @keyframes App-logo-spin {
