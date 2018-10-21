@@ -10,9 +10,9 @@ class Btn extends Component {
     renderCard = (text,color,icon,wicon,className) => {
         return (
             <div>
-                <ButtonGroup className={className} size='small'>
-                    <Button style={{backgroundColor:color?color:'#575757', borderColor:color?color:'#575757',fontSize:18, color:'#FFFFFF'}}>{text}</Button>
-                    {wicon?null:<Button style={{backgroundColor:color?color:'#575757', borderColor:color?color:'#575757', opacity:0.8,fontSize:18, color:'#FFFFFF',fontWeight:"bolder"}}><Icon type={icon?icon:"right"} /></Button>}
+                <ButtonGroup className={className}>
+                    <Button style={{backgroundColor:color?color:'#575757', borderColor:color?color:'#575757',fontSize:19, color:'#FFFFFF'}}>{text}</Button>
+                    {wicon?null:<Button style={{backgroundColor:color?color:'#575757', borderColor:color?color:'#575757', opacity:0.8,fontSize:19, color:'#FFFFFF',fontWeight:"bolder"}}><Icon type={icon?icon:"right"} /></Button>}
                 </ButtonGroup>
             </div>
         );

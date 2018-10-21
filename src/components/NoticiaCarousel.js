@@ -10,14 +10,14 @@ class Noticia extends Component {
     return (
         <div>
             <Row>
-                <Col lg={5}></Col>
+                <Col lg={4}></Col>
                 <Col lg={14}>
                 <h1 className="carousel-title">{title}</h1>
                 </Col>
-                <Col lg={5}></Col>
+                <Col lg={6}></Col>
             </Row>
             
-            <Row style={{height:"10px"}}>
+            <Row>
                 <Col lg={4}></Col>
                 {img?<Col lg={8}>
                 <img className="carousel-img" alt="Novidade" src={img}/>
