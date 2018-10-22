@@ -8,8 +8,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +20,8 @@
 .App-link {
   color: #61dafb;
 }
+
+/* Carousel */
 
 .ant-carousel .slick-slide {
   text-align: center;
@@ -75,6 +76,7 @@
   to { transform: rotate(360deg); }
 }
 
+/* Font */
 
 @font-face {
   font-family: 'BebasKai';
@@ -89,4 +91,22 @@
 
 * {
   font-family: BebasKai;
+}
+
+
+/* Menu */
+.menu-float-left {
+  float: left;
+}
+
+.menu-float-right {
+  float: right;
+}
+
+.icon-menu {
+  font-size: 16px;
+}
+
+.submenu-center {
+  text-align: center;
 }
