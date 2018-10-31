@@ -11,11 +11,11 @@ class App extends Component {
     return (
       <Layout>
         <Header color='#653998'>
-          <HeaderItem image text='menu' key='10' left />
-          <HeaderItem image text='logo' key='10' left />
-          <HeaderItem button icon='./img/icon-user-black.png' key='3'/>
-          <HeaderItem button text='Notificações' icon='bell' key='2'/>
-          <HeaderItem button text='Turmas' icon='team' key='1'/>
+          <HeaderItem image icon='menu' text='menu' key='0' left />
+          <HeaderItem image icon='logoteste' width='200px' text='logo' key='1' left />
+          <HeaderItem button icon='user' key='2'/>
+          <HeaderItem button text='Notificações' icon='bell' key='3'/>
+          <HeaderItem button text='Turmas' icon='team' key='4'/>
         </Header>
         <Content>
           <Carousel>
