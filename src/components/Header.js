@@ -5,18 +5,16 @@ import 'antd/dist/antd.css';
 import { Icon, Layout, Menu, } from 'antd';
 import hamburguer from '../img/hamburguer.png'
 import logo from '../img/logo.png';
+import MenuItem from 'antd/lib/menu/MenuItem';
 const { Header} = Layout;
 
 
 class Header1 extends Component {
   render()  {
       return (
-        <Header style={{backgroundColor:this.props.color?this.props.color:'#282c34'}}>
-        <Menu mode="horizontal" style={{ lineHeight: '64px' }}>
+      <Header style={{backgroundColor:this.props.color?this.props.color:'#282c34'}}>
+        <Menu mode="horizontal" style={{ lineHeight: '64px', backgroundColor:this.props.color?this.props.color:'#282c34' }}>
           {this.props.children}
-          <Menu.Item key="3">nav 1</Menu.Item>
-          <Menu.Item key="4">nav 2</Menu.Item>
-          <Menu.Item key="5">nav 3</Menu.Item>
         </Menu>
       </Header>
       );
