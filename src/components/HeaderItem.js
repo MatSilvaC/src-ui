@@ -34,7 +34,7 @@ class HeaderItem extends Component {
 
     render()  {
         return (
-            <Menu.Item className='ant-menu-item' onClick={() => (console.log())} onItemHover={() => (console.log())} style={{float: this.props.left?'left':'right'}} key={this.props.key}>
+            <Menu.Item className='ant-menu-item' onClick={this.props.onClick1?this.props.onClick1:() => (null)} onItemHover={() => (null)} style={{float: this.props.left?'left':'right'}} key={this.props.key}>
                 {this.renderButton()}
                 {this.renderImage(this.props.icon,this.props.width)}
                 

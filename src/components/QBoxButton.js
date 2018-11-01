@@ -16,6 +16,7 @@ class QBoxButton extends Component {
                             <img 
                                 style={{width:'20px',marginLeft:'-9px'}} 
                                 src={img[icon]}
+                                alt={icon}
                             />
                         </Button>
                         :null}
