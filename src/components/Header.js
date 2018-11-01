@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 
 import 'antd/dist/antd.css';
-import { Icon, Layout, Menu, } from 'antd';
-import hamburguer from '../img/hamburguer.png'
-import logo from '../img/logo.png';
-import MenuItem from 'antd/lib/menu/MenuItem';
+import { Layout, Menu, } from 'antd';
 const { Header} = Layout;
 
 

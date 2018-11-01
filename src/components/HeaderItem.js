@@ -3,7 +3,7 @@ import '../App.css';
 
 import img from '../img'
 import 'antd/dist/antd.css';
-import { Icon, Layout, Menu, } from 'antd';
+import { Menu, } from 'antd';
 import { QBoxButton } from '.'
 
 class HeaderItem extends Component {
@@ -28,6 +28,7 @@ class HeaderItem extends Component {
             <img 
                 style={{width:width?width:'30px',marginLeft:'-9px'}} 
                 src={img[icon]}
+                alt={icon}
             />
         );
     }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 
 import 'antd/dist/antd.css';
-import { Row, Col, Icon } from 'antd';
+import { Row, Col } from 'antd';
 import {QBoxButton} from "../components"
 
 class Noticia extends Component {

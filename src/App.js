@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import {Carousel,Noticia, NoticiaCarousel,QBoxButton, Header, HeaderItem, Cartao} from "./components";
-import { Layout, Card } from 'antd';
+import { Layout } from 'antd';
 
 const {Content} = Layout;
 
