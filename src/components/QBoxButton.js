@@ -30,6 +30,7 @@ class QBoxButton extends Component {
             borderColor:this.props.color?this.props.color:'#575757',
             fontSize:19, 
             color:this.props.textcolor?this.props.textcolor:'#EFEFEF',
+            float:this.props.Noticia?'left':''
         };
       }
     iconStyle = () => {
@@ -39,7 +40,8 @@ class QBoxButton extends Component {
             opacity:0.8,
             fontSize:19, 
             fontWeight:"bolder",
-            width: '20px'
+            width: '20px',
+            float:this.props.Noticia?'right':''
         };
     }
 
@@ -49,7 +51,8 @@ class QBoxButton extends Component {
             {this.renderButton(
                 this.props.text,
                 this.props.icon,
-                this.props.className
+                this.props.className,
+                this.props.Noticia
             )}   
         </div>
         );

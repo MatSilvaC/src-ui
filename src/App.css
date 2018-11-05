@@ -27,7 +27,6 @@
   text-align: center;
   height: 160px;
   line-height: 160px;
-  background: #EFEFEF;
   overflow: hidden;
 }
 
@@ -38,7 +37,9 @@
 .ant-carousel .slick-dots li button {
   border-radius: none;
 }
-
+.ant-carousel{
+  background: #EFEFEF;
+}
 .ant-carousel .slick-dots li {
   background: #262626;
   border-radius: 2px;

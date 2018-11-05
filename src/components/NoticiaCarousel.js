@@ -24,7 +24,7 @@ class Noticia extends Component {
                 </Col>:null}
                 <Col lg={img?8:16}>
                 <p className="carousel-text">{subtitle}</p>
-                <QBoxButton text="Visitar" textcolor='#EFEFEF' icon='right' className="carousel-btn"/>
+                <QBoxButton text="Visitar" textcolor='#EFEFEF' Noticia icon='right' className="carousel-btn"/>
                 </Col>
                 <Col lg={4}></Col>
             </Row>
