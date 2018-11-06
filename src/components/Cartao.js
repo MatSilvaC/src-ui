@@ -6,33 +6,37 @@ import { Card, Icon, Avatar } from 'antd';
 const { Meta } = Card;
 
 class Cartao extends Component {
-  renderCard = (done,title,subtitle) => {
+  renderCard = (text) => {
     return (
       <Card
-        style={{ width: 300}}
+        style={{width:400,borderRadius:'10px 0px 0px 0px',backgroundColor:'#ffd03e'}}
         
-        cover={<img alt="imagem" src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" />}
+        cover={<div><div style={{height:20,borderRadius:'10px 0px 0px 0px'}}></div><img alt="imagem" style={{width:'100%'}} src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" /></div>}
         actions={[<Icon type="setting" />, <Icon type="edit" />, <Icon type="ellipsis" />]}
       >
         <Meta
-          avatar={
-            <Avatar>
-                <Icon type={!done?"close":"check" } style={!done?{color:"#d9534f"}:{color:"#5cb85c"}} theme="outlined" />
-            </Avatar>
-          }
-          title={title}
-          description={subtitle}
+          // avatar={
+          //   <Avatar>
+          //       <Icon type={!done?"close":"check" } style={!done?{color:"#d9534f"}:{color:"#5cb85c"}} theme="outlined" />
+          //   </Avatar>
+          // }
+          description={text}
         />
       </Card>
     );
+  }
+
+  cardStyle = () =>{
+    return{
+      borderRadius:'10px 0px px 100px',
+      width:300
+    }
   }
   render()  {
       return (
         <div>
           {this.renderCard(
-            this.props.done,
-            this.props.title,
-            this.props.subtitle
+            this.props.text
           )}
 
         </div>
