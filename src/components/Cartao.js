@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 
 import 'antd/dist/antd.css';
-import { Card, Icon, Avatar } from 'antd';
+import { Card, Icon } from 'antd';
 const { Meta } = Card;
 
 class Cartao extends Component {

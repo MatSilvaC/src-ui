@@ -21,26 +21,26 @@ class Noticia extends Component {
             </Row>
             
             <Row>
-                <Col lg={4}><img src={left} style={{ width: '20px' }}></img></Col>
+                <Col lg={4}><img src={left} alt='left' style={{ width: '20px' }}></img></Col>
                 {
                   img?
-                    <Col lg={8}>
+                    <Col lg={9}>
                       <img className="carousel-img" alt="Novidade" src={img}/>
                     </Col>
                   :null
                 }
-                <Col lg={img?8:16}>
+                <Col lg={img?7:16}>
                 <p className="carousel-text">{subtitle}</p>
                 <QBoxButton text="Visitar" textcolor='#EFEFEF' Noticia icon='right' className="carousel-btn"/>
                 </Col>
-                <Col lg={4}><img src={right} style={{ width: '20px', float: 'right' }}></img></Col>
+                <Col lg={4}><img src={right} alt='right' style={{ width: '20px', float: 'right' }}></img></Col>
             </Row>
         </div>
     );
   }
   render()  {
       return (
-        <div>
+        <div style={{width: '100%', display: 'inline-block'}}>
           {this.renderNoticia(
             this.props.title,
             this.props.subtitle,

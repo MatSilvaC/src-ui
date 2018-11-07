@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 
 import img from '../img'
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.less';
 import { Menu, } from 'antd';
 import { QBoxButton } from '.'
 
@@ -12,7 +12,7 @@ class HeaderItem extends Component {
             return null;
         }
         return (
-            <QBoxButton 
+            <QBoxButton
                 text={this.props.text} 
                 color='#EFEFEF' 
                 icon={this.props.icon} 
@@ -35,7 +35,7 @@ class HeaderItem extends Component {
 
     render()  {
         return (
-            <Menu.Item className='ant-menu-item' onClick={this.props.onClick1?this.props.onClick1:() => (null)} onItemHover={() => (null)} style={{float: this.props.left?'left':'right'}} key={this.props.key}>
+            <Menu.Item className='ant-menu-item' onClick={this.props.onClick1?this.props.onClick1:() => (null)} onItemHover={() => (null)} style={{float: this.props.left?'left':'right',margin:this.props.button?15:0}} key={this.props.key}>
                 {this.renderButton()}
                 {this.renderImage(this.props.icon,this.props.width)}
                 

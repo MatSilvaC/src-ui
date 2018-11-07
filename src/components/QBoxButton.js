@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import img from '../img'
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.less';
 import { Button } from 'antd';
 
 class QBoxButton extends Component {
@@ -36,7 +36,8 @@ class QBoxButton extends Component {
         return {
             background: 'rgba(0, 0, 0, .0)',
             border:'none',
-            padding:0
+            padding:0,
+            display: 'flex'
         }
     }
 
@@ -47,8 +48,7 @@ class QBoxButton extends Component {
             borderRadius:this.props.icon?'5px 0px 0px 5px':'5px 5px 5px 5px', 
             borderColor:this.props.color?this.props.color:'#575757',
             fontSize:19, 
-            color:this.props.textcolor?this.props.textcolor:'#EFEFEF',
-            float:'left'
+            color:this.props.textcolor?this.props.textcolor:'#EFEFEF'
         };
       }
     iconStyle = () => {
@@ -60,8 +60,7 @@ class QBoxButton extends Component {
             opacity:0.8,
             fontSize:19, 
             fontWeight:"bolder",
-            width: '20px',
-            float:'right'
+            width: '20px'
         };
     }
 

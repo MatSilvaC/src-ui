@@ -10,11 +10,12 @@ class App extends Component {
     return (
       <Layout>
         <Header color='#653998'>
-          <HeaderItem image icon='menu' text='menu' key='0' left />
-          <HeaderItem image icon='logoteste' width='200px' text='logo' key='1' left />
-          <HeaderItem button icon='user' key='2'/>
-          <HeaderItem button text='Notificações' icon='bell' key='3'/>
-          <HeaderItem button text='Turmas' icon='team' key='4'/>
+          <HeaderItem image icon='menu' text='menu' left />
+          <HeaderItem button icon='user'/>
+          <HeaderItem image icon='logoteste' width='200px' text='logo' left />
+          
+          <HeaderItem button text='Notificações' icon='bell'/>
+          <HeaderItem button text='Turmas' icon='team'/>
         </Header>
         <Content style={{backgroundColor:'#FFFFFF'}}>
           <Carousel>
