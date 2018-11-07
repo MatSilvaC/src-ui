@@ -3,7 +3,7 @@ import '../App.css';
 
 import 'antd/dist/antd.css';
 import { Row, Col} from 'antd';
-import {QBoxButton} from "../components"
+import { QBoxButton } from "../components"
 
 class Noticia extends Component {
   renderNoticia = (title,subtitle,img) => {

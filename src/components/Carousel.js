@@ -8,10 +8,10 @@ class CarouselCard extends Component {
   render() {
       return (
         <div>
-            <Carousel autoplay prevArrow nextArrow>
+            <Carousel>
               {this.props.children}
             </Carousel>
-          </div>
+        </div>
       );
     }
 }
