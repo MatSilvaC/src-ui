@@ -115,3 +115,33 @@
   text-align: center;
 }
 
+@media screen and (max-width:730px){
+  .header{
+    display: none;
+  }
+}
+@media screen and (max-width:995px){
+  .sign{
+    visibility: hidden;
+  }
+  .carousel-text{
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    width: 100%;
+    text-overflow: clip;
+    overflow: visible;
+    padding:0px 50px;
+  }
+  .carousel-img{
+    padding-left: 50px;
+    padding-bottom: 25px;
+  }
+  .carousel-title{
+    padding-left: 50px;
+  }
+  .btncarousel{
+    padding-right: 50px;
+  }
+}
+
