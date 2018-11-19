@@ -14,8 +14,8 @@ class App extends Component {
           <HeaderItem button icon='user'/>
           {/* <HeaderItem class='tes1' image icon='logoteste' width='200px' text='logo' left /> */}
           
-          <HeaderItem class='tes1' button text='Notificações' icon='bell'/>
-          <HeaderItem class='tes1' button text='Turmas' icon='team'/>
+          <HeaderItem class='header' button text='Notificações' icon='bell'/>
+          <HeaderItem class='header' button text='Turmas' icon='team'/>
         </Header>
         
       </Layout>
