@@ -13,15 +13,15 @@ class Noticia extends Component {
     return (
         <div>
             <Row>
-                <Col lg={4}>TESTE</Col>
+                <Col lg={4}></Col>
                 <Col lg={14}>
                 <h1 className="carousel-title">{title}</h1>
                 </Col>
-                <Col lg={6}>TESTE</Col>
+                <Col lg={6}></Col>
             </Row>
             
             <Row>
-                <Col lg={4}><img src={left} alt='left' style={{ width: '20px' }}></img></Col>
+                <Col lg={4}><img className='sign' src={left} alt='left' style={{ width: '20px' }}></img></Col>
                 {
                   img?
                     <Col lg={9}>
@@ -31,9 +31,9 @@ class Noticia extends Component {
                 }
                 <Col lg={img?7:16}>
                 <p className="carousel-text">{subtitle}</p>
-                <QBoxButton text="Visitar" textcolor='#EFEFEF' Noticia icon='right' className="carousel-btn"/>
+                <QBoxButton className='btncarousel' text="Visitar" textcolor='#EFEFEF' Noticia icon='right' className="carousel-btn"/>
                 </Col>
-                <Col lg={4}><img src={right} alt='right' style={{ width: '20px', float: 'right' }}></img></Col>
+                <Col lg={4}><img className='sign' src={right} alt='right' style={{ width: '20px', float: 'right' }}></img></Col>
             </Row>
         </div>
     );
