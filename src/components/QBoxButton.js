@@ -27,11 +27,9 @@ class QBoxButton extends Component {
             background: 'rgba(0, 0, 0, .0)',
             border:'none',
             paddingTop:0,
-            paddingRight: 50,
-            display: 'flex',
-            '@media screen and (max-width: 730px)': {
-                padding: "50px",
-              }
+            paddingRight: 0,
+            paddingLeft: 0,
+            display: 'flex'
         }
     }
 

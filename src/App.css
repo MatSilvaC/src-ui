@@ -115,6 +115,13 @@
   text-align: center;
 }
 
+@media screen and (max-width:480px){
+  .carousel-img{
+    width: 100%;
+    height: auto;
+    padding-right: 50px;
+  }
+}
 @media screen and (max-width:730px){
   .header{
     display: none;
@@ -140,8 +147,8 @@
   .carousel-title{
     padding-left: 50px;
   }
-  .btncarousel{
-    padding-right: 50px;
+  .carousel-btn{
+    margin-right: 50px;
   } 
 }
 
