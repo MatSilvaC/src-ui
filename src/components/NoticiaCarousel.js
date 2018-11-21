@@ -19,7 +19,7 @@ class NoticiaCarousel extends Component {
             </Row>
             
             <Row>
-                <Col lg={4}><QBoxButton className="sign" onClick={ () =>{this._reactInternalFiber.return._debugOwner.alternate.stateNode.slickPrev();}} icon="leftb"></QBoxButton></Col>
+                <Col lg={4}><QBoxButton className="sign btn-carousel" onClick={ () =>{this._reactInternalFiber.return._debugOwner.alternate.stateNode.slickPrev();}} icon="left"></QBoxButton></Col>
                 {
                   img?
                     <Col lg={9}>
@@ -31,7 +31,7 @@ class NoticiaCarousel extends Component {
                 <p className="carousel-text">{subtitle}</p>
                 <QBoxButton text="Visitar" textcolor='#EFEFEF' Noticia icon='right' className="carousel-btn"/>
                 </Col>
-                <Col lg={4}><QBoxButton className="sign" onClick={ () =>{this._reactInternalFiber.return._debugOwner.alternate.stateNode.slickNext();}} icon="rightb"></QBoxButton></Col>
+                <Col lg={4}><QBoxButton className="sign btn-carousel btn-carousel-next" onClick={ () =>{this._reactInternalFiber.return._debugOwner.alternate.stateNode.slickNext();}} icon="right"></QBoxButton></Col>
             </Row>
         </div>
     );

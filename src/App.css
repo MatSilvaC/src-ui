@@ -115,6 +115,14 @@
   text-align: center;
 }
 
+.btn-carousel {
+  margin: 25px;
+}
+
+.btn-carousel-next {
+  float: right;
+}
+
 @media screen and (max-width:480px){
   .carousel-img{
     width: 100%;

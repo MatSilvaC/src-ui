@@ -8,7 +8,8 @@ import logoteste from './logo.png'
 import right from './icon-right-white.png'
 import rightb from './icon-right-black.png'
 import leftb from './icon-left-black.png'
+import left from './icon-left-white.png'
 
-const images = {bell,menub,menu,user,team,logo,right,logoteste,rightb,leftb}
+const images = {bell,menub,menu,user,team,logo,right,left,logoteste,rightb,leftb}
 
 export default images;
