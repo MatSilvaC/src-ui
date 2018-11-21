@@ -20,9 +20,9 @@ class QBoxDrawer extends Component {
 
     render(){
         return (
-            <Drawer title="Menu Lateral" placement="left" closable={true} onClose={this.onClose} visible={this.state.visible}>
+            <Drawer title="QBox" placement="left" style={{padding:0}} closable={true} onClose={this.onClose} visible={this.state.visible}>
                 <Menu onClick={this.handleClick} style={{ width: 256 }} defaultSelectedKeys={['1']} defaultOpenKeys={['sub1']} mode="inline">
-                <SubMenu key="sub11" title={<span><Icon type="mail" /><span>Navigation One</span></span>}>
+                <SubMenu key="sub11" title={<span><Icon type="team" /><span>Meus Amigos</span></span>}>
                     <MenuItemGroup key="g1" title="Item 1">
                     <Menu.Item key="11">Option 1</Menu.Item>
                     <Menu.Item key="12">Option 2</Menu.Item>
@@ -32,7 +32,7 @@ class QBoxDrawer extends Component {
                     <Menu.Item key="14">Option 4</Menu.Item>
                     </MenuItemGroup>
                 </SubMenu>
-                <SubMenu key="sub12" title={<span><Icon type="appstore" /><span>Navigation Two</span></span>}>
+                <SubMenu key="sub12" title={<span><Icon type="frown" /><span>Não Finalizados</span></span>}>
                     <Menu.Item key="15">Option 5</Menu.Item>
                     <Menu.Item key="16">Option 6</Menu.Item>
                     <SubMenu key="sub13" title="Submenu">
@@ -40,7 +40,13 @@ class QBoxDrawer extends Component {
                     <Menu.Item key="18">Option 8</Menu.Item>
                     </SubMenu>
                 </SubMenu>
-                <SubMenu key="sub14" title={<span><Icon type="setting" /><span>Navigation Three</span></span>}>
+                <SubMenu key="sub14" title={<span><Icon type="star" /><span>Favoritos</span></span>}>
+                    <Menu.Item key="19">Option 9</Menu.Item>
+                    <Menu.Item key="110">Option 10</Menu.Item>
+                    <Menu.Item key="111">Option 11</Menu.Item>
+                    <Menu.Item key="112">Option 12</Menu.Item>
+                </SubMenu>
+                <SubMenu key="sub15" title={<span><Icon type="check" /><span>Finalizados</span></span>}>
                     <Menu.Item key="19">Option 9</Menu.Item>
                     <Menu.Item key="110">Option 10</Menu.Item>
                     <Menu.Item key="111">Option 11</Menu.Item>

@@ -92,11 +92,9 @@
   font-style: normal;
 }
 
-
 * {
   font-family: BebasKai;
 }
-
 
 /* Menu */
 .menu-float-left {
@@ -158,4 +156,11 @@
   .carousel-btn{
     margin-right: 50px;
   } 
+}
+
+.ant-drawer-body {
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
 }

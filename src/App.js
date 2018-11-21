@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import './App.css';
 import {Carousel, NoticiaCarousel, Header, HeaderItem, QBoxDrawer, Cartao} from "./components";
+=======
+import {Carousel, NoticiaCarousel, Header, HeaderItem, QBoxDrawer} from "./components";
+>>>>>>> dbe05fe1e9af3a6980ae9d9afb98a2e4e71e05e7
 import { Layout } from 'antd';
+import './App.css';
 
 const {Content} = Layout;
 const imgteste ='https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png';

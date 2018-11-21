@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Layout, Menu, Icon } from 'antd';
 
-const { Header, Content, Footer, Sider } = Layout;
+const { Sider } = Layout;
 
 class QBoxSider extends Component {
   render(){
