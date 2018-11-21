@@ -6,5 +6,6 @@ import QBoxButton from "./QBoxButton";
 import Header from "./Header";
 import HeaderItem from "./HeaderItem";
 import QBoxSider from "./QBoxSider";
+import QBoxDrawer from "./QBoxDrawer";
 
-export { Cartao,QBoxSider, Carousel, Noticia, NoticiaCarousel, QBoxButton, Header, HeaderItem};
+export { Cartao, QBoxSider, QBoxDrawer, Carousel, Noticia, NoticiaCarousel, QBoxButton, Header, HeaderItem};
