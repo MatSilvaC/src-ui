@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import '../App.css';
 
 import 'antd/dist/antd.css';
-import { Card, Icon } from 'antd';
+import { Card, Icon, Divider } from 'antd';
 const { Meta } = Card;
 
 class Cartao extends Component {
   renderCard = (text) => {
     return (
       <Card
-        style={{width:400,borderRadius:'10px 0px 0px 0px',backgroundColor:'#ffd03e'}}
+        style={{width:400,borderRadius:'10px 0px 0px 0px',backgroundColor:'#f79810'}}
         
         cover={<div><div style={{height:20,borderRadius:'10px 0px 0px 0px'}}></div><img alt="imagem" style={{width:'100%'}} src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" /></div>}
         actions={[<Icon type="setting" />, <Icon type="edit" />, <Icon type="ellipsis" />]}
@@ -22,6 +22,7 @@ class Cartao extends Component {
           // }
           description={text}
         />
+        <Divider/>
       </Card>
     );
   }

@@ -6,20 +6,26 @@ import { Row, Col } from 'antd';
 import { QBoxButton } from "../components"
 
 class NoticiaCarousel extends Component {
+  prev = () =>{
+    this._reactInternalFiber.return._debugOwner.alternate.stateNode.slickPrev();
+  }
+  next = () =>{
+    this._reactInternalFiber.return._debugOwner.alternate.stateNode.slickNext();
+  }
 
   renderNoticia = (title,subtitle,img) => {
     return (
         <div>
             <Row>
                 <Col lg={4}></Col>
-                <Col lg={14}>
+                <Col lg={16}>
                 <h1 className="carousel-title">{title}</h1>
                 </Col>
-                <Col lg={6}></Col>
+                <Col lg={4}></Col>
             </Row>
             
             <Row>
-                <Col lg={4}><QBoxButton className="sign btn-carousel" onClick={ () =>{this._reactInternalFiber.return._debugOwner.alternate.stateNode.slickPrev();}} icon="left"></QBoxButton></Col>
+                <Col lg={4}><QBoxButton className="sign btn-carousel" onClick={ () =>{this.prev();}} icon="left"></QBoxButton></Col>
                 {
                   img?
                     <Col lg={9}>
@@ -31,7 +37,7 @@ class NoticiaCarousel extends Component {
                 <p className="carousel-text">{subtitle}</p>
                 <QBoxButton text="Visitar" textcolor='#EFEFEF' Noticia icon='right' className="carousel-btn"/>
                 </Col>
-                <Col lg={4}><QBoxButton className="sign btn-carousel btn-carousel-next" onClick={ () =>{this._reactInternalFiber.return._debugOwner.alternate.stateNode.slickNext();}} icon="right"></QBoxButton></Col>
+                <Col lg={4}><QBoxButton className="sign btn-carousel btn-carousel-next" onClick={ () =>{this.next();}} icon="right"></QBoxButton></Col>
             </Row>
         </div>
     );
