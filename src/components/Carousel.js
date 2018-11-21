@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 
 import 'antd/dist/antd.css';
-import { Carousel, Button } from 'antd';
+import { Carousel } from 'antd';
 
 class CarouselCard extends Component {
   render() {

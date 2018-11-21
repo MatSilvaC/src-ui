@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
-import {Carousel, Noticia, QBoxSider, NoticiaCarousel, QBoxButton, Header, HeaderItem, Cartao, QBoxDrawer} from "./components";
+import {Carousel, NoticiaCarousel, Header, HeaderItem, QBoxDrawer} from "./components";
 import { Layout } from 'antd';
+import './App.css';
 
 const {Content} = Layout;
 const imgteste ='https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png';
