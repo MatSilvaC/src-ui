@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import '../App.css';
 
 import 'antd/dist/antd.css';
-import { Carousel } from 'antd';
+import { Carousel, Button } from 'antd';
 
 class CarouselCard extends Component {
   render() {
       return (
         <div>
-            <Carousel>
+            <Carousel autoplay>
               {this.props.children}
             </Carousel>
         </div>

@@ -5,9 +5,9 @@ import 'antd/dist/antd.less';
 import { Button } from 'antd';
 
 class QBoxButton extends Component {
-    renderButton = (text,icon,className) => {
+    renderButton = (text,icon,className,onClick) => {
         return (
-                <Button style={this.mainStyle()} className={className}>
+                <Button onClick={onClick} style={this.mainStyle()} className={className}>
                     {text?<div style={this.buttonStyle()}>{text}</div>:null}
                     {icon?
                         <div style={this.iconStyle()}>
@@ -63,7 +63,7 @@ class QBoxButton extends Component {
                 this.props.text,
                 this.props.icon,
                 this.props.className,
-                this.props.Noticia
+                this.props.onClick
             )}   
         </div>
         );
