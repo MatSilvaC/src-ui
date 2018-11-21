@@ -164,3 +164,9 @@
   padding-right: 0px;
   padding-bottom: 0px;
 }
+
+.ant-card-actions{
+  background-color: #f79810 !important;
+  border-radius:0px 0px 10px 0px !important;
+  border-width: 0px !important;
+}
