@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Carousel, NoticiaCarousel, Header, HeaderItem, QBoxDrawer, Cartao} from "./components";
+import {Carousel, NoticiaCarousel, Header, HeaderItem, QBoxDrawer, Cartao, QBoxMenuPerfil} from "./components";
 import { Layout } from 'antd';
 import './App.css';
 
 const {Content} = Layout;
 const imgteste ='https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png';
 class App extends Component {
+  state = { menuPerfil: true };
+
   showDrawer = () => {
     this._reactInternalFiber.child.child.child.child.stateNode.showDrawer();
   }
+  showMenuPerfil = () => {
+    this.setState({
+      menuPerfil: !this.state.menuPerfil,
+    })
+};
 
   render() {
     return (
@@ -17,7 +24,8 @@ class App extends Component {
           <QBoxDrawer />
           <Header color='#653998'>
             <HeaderItem onClick={() => {this.showDrawer();}} image icon='menu' text='menu' left />
-            <HeaderItem button icon='user'/>
+            <HeaderItem onClick={() =>{this.showMenuPerfil()}} button icon='user'/>
+            {this.state.menuPerfil && <QBoxMenuPerfil/>}
             {/* <HeaderItem class='tes1' image icon='logoteste' width='200px' text='logo' left /> */}
             
             <HeaderItem class='header' button text='Notificações' icon='bell'/>

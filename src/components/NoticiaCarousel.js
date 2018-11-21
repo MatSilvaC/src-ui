@@ -7,10 +7,10 @@ import { QBoxButton } from "../components"
 
 class NoticiaCarousel extends Component {
   prev = () =>{
-    this._reactInternalFiber.return._debugOwner.alternate.stateNode.slickPrev();
+    this._reactInternalFiber.return._debugOwner.stateNode.slickPrev();
   }
   next = () =>{
-    this._reactInternalFiber.return._debugOwner.alternate.stateNode.slickNext();
+    this._reactInternalFiber.return._debugOwner.stateNode.slickNext();
   }
 
   renderNoticia = (title,subtitle,img) => {
@@ -37,7 +37,7 @@ class NoticiaCarousel extends Component {
                 <p className="carousel-text">{subtitle}</p>
                 <QBoxButton text="Visitar" textcolor='#EFEFEF' Noticia icon='right' className="carousel-btn"/>
                 </Col>
-                <Col lg={4}><QBoxButton className="sign btn-carousel btn-carousel-next" onClick={ () =>{this.next();}} icon="right"></QBoxButton></Col>
+                <Col lg={4}><QBoxButton className="sign btn-carousel btn-carousel-next" onClick={ () =>{this.next();}} icon="right"/></Col>
             </Row>
         </div>
     );
