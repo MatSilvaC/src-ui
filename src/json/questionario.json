@@ -1,0 +1,12 @@
+{
+  "id": "int",
+  "title": "string",
+  "media": "string url",
+  "description": "string",
+  "tags": ["string"],
+  "category": "sting",
+  "level": "noob | iniciante | intermediário | expert",
+  "created": "timestamp",
+  "modified": "timestamp",
+  "questions": ["int"]
+}

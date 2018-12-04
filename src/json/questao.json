@@ -1,0 +1,21 @@
+{
+  "id": "int",
+  "title": "string",
+  "level": "noob | iniciante | intermediário | expert",
+  "tags": ["string"],
+  "media": "string.url",
+  "description": "string",
+  "type": "checkbox | radiobox",
+  "options": ["string"]
+}
+
+{
+  "id": 1,
+  "title": "React é um framework web?",
+  "level": "noob",
+  "tags": ["react", "framework", "programação web"],
+  "media": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+  "description": "React é um projeto do Facebook com qual objetivo principal?",
+  "type": "radiobox",
+  "options": ["sim", "não"]
+}

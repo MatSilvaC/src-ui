@@ -1,0 +1,15 @@
+{
+  "user": "string",
+  "id": "int",
+  "response": ["int"],
+  "obs": "string",
+  "fav": "int"
+}
+
+
+{
+  "id": 1,
+  "response": [true, false],
+  "obs": "esse é o lugar para postar formulas e coisas do tipo :D",
+  "fav": 5
+}

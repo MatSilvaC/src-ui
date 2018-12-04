@@ -1,0 +1,13 @@
+{
+  "user": "string",
+  "date": "timestamp",
+  "responses": [
+    "resposta.json",
+    {
+      "id": 1,
+      "response": [true, false],
+      "obs": "esse é o lugar para postar formulas e coisas do tipo :D",
+      "fav": 5
+    }
+  ]
+}
