@@ -33,9 +33,9 @@ class HeaderItem extends Component {
         );
     }
 
-    render()  {
+    render() {
         return (
-            <Menu.Item className='ant-menu-item' className={this.props.class} onClick={this.props.onClick1?this.props.onClick1:() => (null)} onItemHover={() => (null)} style={{float: this.props.left?'left':'right',margin:this.props.button?15:0}} key={this.props.key}>
+            <Menu.Item className={this.props.class} onClick={this.props.onClick?this.props.onClick:() => (null)} onItemHover={() => (null)} style={{float: this.props.left?'left':'right',margin:this.props.button?15:0}} key={this.props.key}>
                 {this.renderButton()}
                 {this.renderImage(this.props.icon,this.props.width)}
                 
